@@ -1,0 +1,95 @@
+/**
+ * CLI Brand Color Palette
+ * Version 1.0
+ * 
+ * Import this file to use CLI brand colors in your project:
+ * @import 'color-palette.css';
+ */
+
+:root {
+  /* ============================================
+     PRIMARY BRAND COLORS
+     ============================================ */
+  
+  /* Silver - Primary text and logo color on dark backgrounds */
+  --cli-silver: #C9C9C9;
+  --cli-silver-rgb: 201, 201, 201;
+  
+  /* Jet Gray - Secondary backgrounds and elements */
+  --cli-jet-gray: #363636;
+  --cli-jet-gray-rgb: 54, 54, 54;
+  
+  /* Pure Orange - Accents, CTAs, highlights */
+  --cli-orange: #EA5600;
+  --cli-orange-rgb: 234, 86, 0;
+  
+  /* BU Red - Alerts, warnings, emphasis */
+  --cli-red: #CC0000;
+  --cli-red-rgb: 204, 0, 0;
+
+  /* ============================================
+     BACKGROUND COLORS
+     ============================================ */
+  
+  /* Dark background - Primary dark surface */
+  --cli-bg-dark: #1A1A1A;
+  --cli-bg-dark-rgb: 26, 26, 26;
+  
+  /* Darker background - Deepest surface */
+  --cli-bg-darker: #0D0D0D;
+  --cli-bg-darker-rgb: 13, 13, 13;
+
+  /* ============================================
+     TEXT COLORS
+     ============================================ */
+  
+  /* Light text - Primary text on dark backgrounds */
+  --cli-text-light: #F5F5F5;
+  --cli-text-light-rgb: 245, 245, 245;
+  
+  /* Muted text - Secondary/supporting text */
+  --cli-text-muted: #888888;
+  --cli-text-muted-rgb: 136, 136, 136;
+
+  /* ============================================
+     SEMANTIC COLORS
+     ============================================ */
+  
+  --cli-primary: var(--cli-silver);
+  --cli-accent: var(--cli-orange);
+  --cli-danger: var(--cli-red);
+  --cli-background: var(--cli-bg-darker);
+  --cli-surface: var(--cli-bg-dark);
+  --cli-text: var(--cli-text-light);
+  --cli-text-secondary: var(--cli-text-muted);
+
+  /* ============================================
+     GRADIENTS
+     ============================================ */
+  
+  --cli-gradient-orange-red: linear-gradient(90deg, var(--cli-orange), var(--cli-red));
+  --cli-gradient-dark: linear-gradient(180deg, var(--cli-bg-dark), var(--cli-bg-darker));
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.cli-bg-silver { background-color: var(--cli-silver); }
+.cli-bg-jet-gray { background-color: var(--cli-jet-gray); }
+.cli-bg-orange { background-color: var(--cli-orange); }
+.cli-bg-red { background-color: var(--cli-red); }
+.cli-bg-dark { background-color: var(--cli-bg-dark); }
+.cli-bg-darker { background-color: var(--cli-bg-darker); }
+
+.cli-text-silver { color: var(--cli-silver); }
+.cli-text-jet-gray { color: var(--cli-jet-gray); }
+.cli-text-orange { color: var(--cli-orange); }
+.cli-text-red { color: var(--cli-red); }
+.cli-text-light { color: var(--cli-text-light); }
+.cli-text-muted { color: var(--cli-text-muted); }
+
+.cli-border-silver { border-color: var(--cli-silver); }
+.cli-border-jet-gray { border-color: var(--cli-jet-gray); }
+.cli-border-orange { border-color: var(--cli-orange); }
+.cli-border-red { border-color: var(--cli-red); }
